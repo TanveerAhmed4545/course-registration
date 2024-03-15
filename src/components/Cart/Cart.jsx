@@ -11,7 +11,7 @@ const Cart = ({carts}) => {
                 <h2 className="font-bold text-xl">Course Name</h2>
                 <div>
                     {
-                        carts.map((course,idx)=> <p key={idx}>{idx}{course.name}</p>)
+                        carts.map((course,idx)=> <p  key={idx}><span className='pr-1'>{idx+1}</span>{course.name}</p>)
                     }
                 </div>
 
